@@ -1,0 +1,19 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary: #bc4749;
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1 0 auto;
+}
+#particles-js {
+    position: relative;
+    height: 100%;
+}
+.container {
+     position: absolute;
+}

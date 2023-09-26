@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    animation: changeBg 5s linear infinite;
+}
+@keyframes changeBg {
+    0% {
+        background-color: #e63946;
+    }
+    20% {
+        background-color: #e29578;
+    }
+    40% {
+        background-color: #7678ed;
+    }
+    60% {
+        background-color: #06d6a0;
+    }
+    80% {
+        background-color: #ffd60a;
+    }
+    100% {
+        background-color: #e63946;
+    }
+}
+
+a {
+    text-decoration: none;
+    padding: 20px 40px;
+    color: #000;
+    font-size: 20px;
+    position: relative;
+    border: 2px solid #000;
+    margin-top: 20vh;
+    text-transform: capitalize;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    background-image: linear-gradient(to right, #78290f, #f9c74f, #25ced1, #9c6644);
+    transition: all 1s;
+    z-index: -1;
+}
+.wave::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    animation: wave 1s linear infinite;
+}
+a:hover .wave {
+    right: 0;
+}
+a:hover {
+    color: #fff;
+    border-color: #fff;
+}
+
+/** Bouncing Balls On Table **/
+
+#bounce {
+    margin-top: 40vh;
+}
+
+ul {
+    display: flex;
+    border-bottom:10px solid #323031;
+    border-radius: 10px;
+}
+
+ul > li {
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    background-image: linear-gradient(to right, #78290f, #f9c74f);
+    margin: auto 20px;
+    border-radius: 50%;
+    animation: bounce 1s linear infinite alternate-reverse;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+ul > li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+ul > li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+ul > li:nth-child(4) {
+    animation-delay: 0.6s;
+}
+ul > li:nth-child(5) {
+    animation-delay: 0.8s;
+}
