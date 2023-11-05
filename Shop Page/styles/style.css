@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #e5e5e5;
+    }
+    header {
+        font-size: large;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    header #bottom {
+        font-weight: lighter;
+        font-size: medium;
+    }
+    main {
+        flex: 1 0 auto;
+    }
+    #hero-section {
+        background-image: url(../assets/images/jeans.jpg);
+        background-size: cover;
+        min-height: 35rem;
+        margin: 0px 2rem;
+    }
+    #hero-section button {
+        background-color: #000;
+        color: #fff;
+    }
+    #hero-section button:hover {
+        border-color: #e5e5e5;
+        background-color: #e5e5e5;
+        color: #000;
+    }
+    #input-section button {
+        border-color: #f00;
+        background-color: #f00;
+        color: #fff;
+    }
+    #input-section button:hover {
+        border-color: #e5e5e5;
+        background-color: #e5e5e5;
+        color: #000;
+    }
+    #last-section button {
+        background-color: #000;
+        color: #fff;
+    }
+    #last-section button:hover {
+        border-color: #e5e5e5;
+        background-color: #e5e5e5;
+        color: #000;
+    }
+    #storeA a {
+        color: #000;
+        text-decoration: none;
+    }
+    #storeA a:hover {
+        color: #adb5bd;
+    }

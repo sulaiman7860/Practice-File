@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+}
+main {
+    background-image: linear-gradient(to right,#36D1DC,#5B86E5);
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+ul {
+    display: grid;
+    place-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.col-10 {
+    background-image: linear-gradient(to right,#C9D6FF,#E2E2E2);
+    border-radius: 20px;
+    box-shadow: 0 1rem 1rem -0.5rem #495057;
+}
+
+input {
+    cursor: pointer;
+}
+#showScore {
+    background-image: linear-gradient(to right,#E6DADA,#adb5bd);
+    margin-top: 1rem;
+    box-shadow: 0 1rem 1rem -0.5rem #495057;
+    border-radius: 10px;
+}
+
+.showArea {
+    display:none;
+}
